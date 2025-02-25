@@ -59,23 +59,27 @@ To do that open the Xcode and add camera usage description in `Info.plist`.
 
 
 After making the changes in Android ans iOS add flutter_barcode_scanner to `pubspec.yaml`
-```  
+```yml  
 dependencies:
-  ...
-  flutter_barcode_scanner: ^2.0.0
+  flutter_barcode_scanner: 
+   git:
+    url: https://github.com/hivelts/flutter_barcode_scanner.git
+    ref: main # branch name or commit hash #ea12e41 optional 
 ```
+
+
 
 ### One time scan
 1. You need to import the package first.
 
-```
+```dart
 import 'package:flutter_barcode_scanner/flutter_barcode_scanner.dart';
 ```
 
     
 2. Then use the `scanBarcode` method to access barcode scanning.
     
-```
+```dart
 String barcodeScanRes = await FlutterBarcodeScanner.scanBarcode(
                                                     COLOR_CODE, 
                                                     CANCEL_BUTTON_TEXT, 
@@ -102,7 +106,7 @@ params will be same like `FlutterBarcodeScanner.scanBarcode`
 e.g. 
 
 
-```
+```dart
 FlutterBarcodeScanner.getBarcodeStreamReceiver("#ff6666", "Cancel", false, ScanMode.DEFAULT)
          .listen((barcode) { 
          /// barcode to be used
