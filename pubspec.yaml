@@ -6,7 +6,7 @@ homepage: https://github.com/hivelts/flutter_barcode_scanner
 
 
 environment:
-  sdk: ^3.6.1
+  sdk: ^3.7.0
 
 dependencies:
   flutter:
