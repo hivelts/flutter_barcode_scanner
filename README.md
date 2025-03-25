@@ -3,8 +3,6 @@
 A plugin for Flutter apps that adds barcode scanning support on both Android and iOS.
 
 
-![Demo gif](https://github.com/AmolGangadhare/MyProfileRepo/blob/master/flutter_barcode_scanning_demo.gif "Demo")
-
 
 ## Try example
 Just clone or download the repository, open the project in `Android Studio/ VS Code`, open `pubspec.yaml` and click on `Packages get`.
