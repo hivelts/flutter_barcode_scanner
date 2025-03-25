@@ -50,6 +50,7 @@ public class FlutterBarcodeScannerPlugin implements MethodCallHandler, ActivityR
     private Lifecycle lifecycle;
     private LifeCycleObserver observer;
 
+
     @Override
     public void onAttachedToEngine(@NonNull FlutterPluginBinding binding) {
         pluginBinding = binding;
